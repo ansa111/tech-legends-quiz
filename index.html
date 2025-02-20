@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Legends Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Welcome Page -->
+        <div id="welcome-page" class="page">
+            <h1>🚀 Tech Legends Quiz!</h1>
+            <p>Think you know your programming heroes? Put your knowledge to the test and discover the brilliant minds behind the technologies we use every day!</p>
+            <div class="score-badge" style="background-color: #e2e8f0;">
+                High Score: <span id="high-score">0</span>
+            </div>
+            <button id="start-btn" class="btn primary-btn">Challenge Accepted! 💪</button>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="page hide">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <h1>Question <span id="question-number">1</span></h1>
+            <div class="quiz-box">
+                <div class="question-container" id="question-container"></div>
+                <div class="feedback-message" id="feedback-message"></div>
+                <div class="btn-container" id="btn-container"></div>
+            </div>
+            <button id="next-btn" class="btn primary-btn hide">Next Challenge →</button>
+        </div>
+
+        <!-- Results Page -->
+        <div id="result-page" class="page hide">
+            <h1>🎉 Quiz Complete!</h1>
+            <div id="result-text"></div>
+            <div class="score-badge" id="final-score"></div>
+            <div id="rank-message" class="feedback-message"></div>
+            <button id="restart-btn" class="btn primary-btn">Try Again 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
